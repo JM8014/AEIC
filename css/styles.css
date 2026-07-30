@@ -217,3 +217,69 @@ a:hover{
 
 }
 
+.accordion{
+
+    width:100%;
+
+    margin:30px auto;
+
+}
+
+.accordion-item{
+
+    margin-bottom:15px;
+
+}
+
+.accordion-header{
+
+    width:100%;
+
+    background:#003C71;
+
+    color:white;
+
+    border:none;
+
+    outline:none;
+
+    cursor:pointer;
+
+    font-size:22px;
+
+    font-weight:bold;
+
+    padding:18px;
+
+    text-align:left;
+
+    border-radius:10px;
+
+    transition:.3s;
+
+}
+
+.accordion-header:hover{
+
+    background:#0057A8;
+
+}
+
+.accordion-content{
+
+    display:none;
+
+    padding:25px;
+
+    background:#f5f5f5;
+
+    border-radius:0 0 10px 10px;
+
+}
+
+.accordion-item.active .accordion-content{
+
+    display:block;
+
+}
+
