@@ -283,3 +283,213 @@ a:hover{
 
 }
 
+/* ========================= */
+/* Fondo oscuro */
+/* ========================= */
+
+.modal{
+
+    display:none;
+
+    position:fixed;
+
+    z-index:999;
+
+    left:0;
+
+    top:0;
+
+    width:100%;
+
+    height:100%;
+
+    background:rgba(0,0,0,.6);
+
+    animation:fade .3s;
+
+}
+
+/* ========================= */
+/* Ventana */
+/* ========================= */
+
+.modal-contenido{
+
+    background:white;
+
+    width:80%;
+
+    max-width:600px;
+
+    margin:8% auto;
+
+    padding:30px;
+
+    border-radius:15px;
+
+    box-shadow:0 10px 30px rgba(0,0,0,.3);
+
+    position:relative;
+
+    animation:subir .3s;
+
+}
+
+/* ========================= */
+
+.cerrar{
+
+    position:absolute;
+
+    top:15px;
+
+    right:20px;
+
+    font-size:35px;
+
+    cursor:pointer;
+
+    color:#888;
+
+}
+
+.cerrar:hover{
+
+    color:#003C71;
+
+}
+
+/* ========================= */
+
+@keyframes fade{
+
+    from{
+
+        opacity:0;
+
+    }
+
+    to{
+
+        opacity:1;
+
+    }
+
+}
+
+@keyframes subir{
+
+    from{
+
+        transform:translateY(-40px);
+
+        opacity:0;
+
+    }
+
+    to{
+
+        transform:translateY(0);
+
+        opacity:1;
+
+    }
+
+}
+
+/*========================*/
+
+.buscador{
+
+    width:60%;
+
+    margin:30px auto;
+
+    position:relative;
+
+}
+
+/*========================*/
+
+#buscarCurso{
+
+    width:100%;
+
+    padding:15px;
+
+    font-size:18px;
+
+    border-radius:10px;
+
+    border:2px solid #003C71;
+
+}
+
+/*========================*/
+
+.resultados{
+
+    position:absolute;
+
+    width:100%;
+
+    background:white;
+
+    border-radius:0 0 10px 10px;
+
+    box-shadow:0 5px 15px rgba(0,0,0,.2);
+
+    max-height:300px;
+
+    overflow-y:auto;
+
+    display:none;
+
+    z-index:999;
+
+}
+
+/*========================*/
+
+.resultado{
+
+    padding:15px;
+
+    cursor:pointer;
+
+    border-bottom:1px solid #ddd;
+
+}
+
+.resultado:hover{
+
+    background:#003C71;
+
+    color:white;
+
+}
+
+/*========================*/
+
+.resaltado{
+
+    animation:resaltar 2s;
+
+}
+
+@keyframes resaltar{
+
+    0%{
+
+        background:#fff59d;
+
+    }
+
+    100%{
+
+        background:white;
+
+    }
+
+}
+

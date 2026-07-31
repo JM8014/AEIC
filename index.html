@@ -14,81 +14,131 @@
 
 <body>
 
+    <!-- ========================================= -->
+    <!-- ENCABEZADO -->
+    <!-- ========================================= -->
+
     <header class="encabezado">
-        
+
         <img class="logo"
-         src="img/Logo_AEIC.jpeg"
-         alt="Logo AEIC">
+             src="img/Logo_AEIC.jpeg"
+             alt="Logo AEIC">
 
-        <h1 class="Titulo">Asociación de Estudiantes de la Escuela de Ingeniería Civil de la Universidad de Costa Rica (AEIC)</h1>
+        <h1 class="Titulo">
+            Asociación de Estudiantes de la Escuela de Ingeniería Civil
+            de la Universidad de Costa Rica (AEIC)
+        </h1>
 
-        <p class="Descripcion">Aquí se puede colocar una pequeña introducción sobre la Asociación</p>
+        <p class="Descripcion">
+            Bienvenido al portal de servicios de la AEIC. Aquí encontrarás
+            herramientas y recursos diseñados para apoyar tu vida académica.
+        </p>
 
     </header>
-   
+
+    <!-- ========================================= -->
+    <!-- CONTENIDO -->
+    <!-- ========================================= -->
+
     <main class="contenido">
 
-        <div class="accordion">
+        <h2 class="titulo-seccion">
+            Servicios para el estudiantado
+        </h2>
 
-        <!-- Segundo semestre -->
-            <div class="accordion-item">
+        <div class="contenedor-cards">
 
-                <button class="accordion-header">
-                    Servicios de la AEIC para el estudiantado:
+            <!-- ================================= -->
+            <!-- Escuela -->
+            <!-- ================================= -->
+
+            <div class="card">
+
+                <h3>Sitio web de la Escuela</h3>
+
+                <p>
+                    Información oficial de la Escuela de Ingeniería Civil.
+                </p>
+
+                <button class="boton abrir-modal"
+                        data-modal="modal-eic">
+
+                    Más información
+
                 </button>
 
-                <div class="accordion-content">
+            </div>
 
-                    <div class="contenedor-cards">
+            <!-- ================================= -->
+            <!-- Salas -->
+            <!-- ================================= -->
 
-                        <div class="card">
+            <div class="card">
 
-                        <p>Sitio web de la Escuela de Ingeniería Civil</p>
-                            
-                            
-                            <a href="Sitio_EIC.html" class="boton">Ver</a>
-                            
-                        </div>
+                <h3>Reserva de salas</h3>
 
-                        <div class="card">
+                <p>
+                    Reserva las salas de estudio administradas por la AEIC.
+                </p>
 
-                            <p>Reserva de salas de estudio</p>
+                <button class="boton abrir-modal"
+                        data-modal="modal-salas">
 
-                            
-                            <a href="Salas.html" class="boton">Ver</a>  
-                        
-                        
-                        </div>
+                    Más información
 
-                        <div class="card">
-
-                            <p>Banco de exámenes</p> 
-                            
-                            <a href="Banco_de_Examenes.html" class="boton">Ver</a> 
-                            
-
-                        </div>
-
-                        <div class="card">
-
-                            <p>Ofertas laborales</p> 
-                        
-                            <a href="Empleo.html" class="boton">Ver</a>
-                        
-
-                        </div>
-
-                    </div>
-
-                </div>
+                </button>
 
             </div>
+
+            <!-- ================================= -->
+            <!-- Banco -->
+            <!-- ================================= -->
+
+            <div class="card">
+
+                <h3>Banco de Exámenes</h3>
+
+                <p>
+                    Exámenes organizados por curso y semestre.
+                </p>
+
+                <button class="boton abrir-modal"
+                        data-modal="modal-banco">
+
+                    Más información
+
+                </button>
+
+            </div>
+
+            <!-- ================================= -->
+            <!-- Empleo -->
+            <!-- ================================= -->
+
+            <div class="card">
+
+                <h3>Ofertas laborales</h3>
+
+                <p>
+                    Oportunidades para estudiantes y egresados.
+                </p>
+
+                <button class="boton abrir-modal"
+                        data-modal="modal-empleo">
+
+                    Más información
+
+                </button>
+
+            </div>
+
         </div>
 
-<!-- --------------------------------------------------- -->
-
     </main>
-    
+
+    <!-- ========================================= -->
+    <!-- FOOTER -->
+    <!-- ========================================= -->
 
     <footer class="footer">
 
@@ -104,7 +154,7 @@
 
                 <p>Facebook: Asociación de Estudiantes de Ingeniería Civil</p>
 
-                <p>Correo: aeic.fi@ucr.ac.cr<br></p>
+                <p>Correo: aeic.fi@ucr.ac.cr</p>
 
             </div>
 
@@ -112,7 +162,175 @@
 
     </footer>
 
-<script src="css/script.js"></script>>
+    <!-- ========================================= -->
+    <!-- MODAL ESCUELA -->
+    <!-- ========================================= -->
+
+    <div id="modal-eic" class="modal">
+
+        <div class="modal-contenido">
+
+            <span class="cerrar">&times;</span>
+
+            <h2>Escuela de Ingeniería Civil</h2>
+
+            <p>
+
+                Accede al sitio oficial de la Escuela de Ingeniería Civil de la
+                Universidad de Costa Rica.
+
+            </p>
+
+            <ul>
+
+                <li>Noticias oficiales.</li>
+
+                <li>Horarios de cursos.</li>
+
+                <li>Personal docente.</li>
+
+                <li>Trámites académicos.</li>
+
+            </ul>
+
+            <br>
+
+            <a href="Sitio_EIC.html" class="boton">
+
+                Ingresar
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- MODAL SALAS -->
+    <!-- ========================================= -->
+
+    <div id="modal-salas" class="modal">
+
+        <div class="modal-contenido">
+
+            <span class="cerrar">&times;</span>
+
+            <h2>Reserva de salas</h2>
+
+            <p>
+
+                Reserva un espacio de estudio administrado por la AEIC.
+
+            </p>
+
+            <ul>
+
+                <li>Consulta disponibilidad.</li>
+
+                <li>Reserva en pocos segundos.</li>
+
+                <li>Administra tus reservas.</li>
+
+            </ul>
+
+            <br>
+
+            <a href="Salas.html" class="boton">
+
+                Reservar
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- MODAL BANCO -->
+    <!-- ========================================= -->
+
+    <div id="modal-banco" class="modal">
+
+        <div class="modal-contenido">
+
+            <span class="cerrar">&times;</span>
+
+            <h2>Banco de Exámenes</h2>
+
+            <p>
+
+                Consulta el material de estudio organizado por cursos.
+
+            </p>
+
+            <ul>
+
+                <li>Exámenes clasificados por semestre.</li>
+
+                <li>Material actualizado continuamente.</li>
+
+                <li>Acceso rápido a cada curso.</li>
+
+                <li>Compra y descarga digital (próximamente).</li>
+
+            </ul>
+
+            <br>
+
+            <a href="Banco_de_Examenes.html" class="boton">
+
+                Explorar cursos
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <!-- ========================================= -->
+    <!-- MODAL EMPLEO -->
+    <!-- ========================================= -->
+
+    <div id="modal-empleo" class="modal">
+
+        <div class="modal-contenido">
+
+            <span class="cerrar">&times;</span>
+
+            <h2>Ofertas laborales</h2>
+
+            <p>
+
+                Consulta oportunidades laborales dirigidas a estudiantes y egresados.
+
+            </p>
+
+            <ul>
+
+                <li>Pasantías.</li>
+
+                <li>Medio tiempo.</li>
+
+                <li>Tiempo completo.</li>
+
+                <li>Práctica profesional.</li>
+
+            </ul>
+
+            <br>
+
+            <a href="Empleo.html" class="boton">
+
+                Ver ofertas
+
+            </a>
+
+        </div>
+
+    </div>
+
+    <script src="css/script.js"></script>
+
 </body>
 
 </html>
